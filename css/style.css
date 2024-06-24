@@ -18794,39 +18794,58 @@ img {
         top: -21px;
     }
 }
-
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-} .float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:70px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
+/* Base */
+.btn-floating:hover img {
+    margin-bottom: -3px
+  }
+  
+  .btn-floating {
+      position: fixed;
+      right: 25px;
+      overflow: hidden;
+      width: 60px;
+      height: 60px;
+      border-radius: 100px;
+      border: 0;
+      z-index: 9999;
+      color: white;
+      transition: .2s;
+  }
+  
+  .btn-floating:hover {
+      width: auto;
+      padding: 0 20px;
+      cursor: pointer;
+  }
+  
+  .btn-floating span {
+      font-size: 16px;
+      margin-left: 5px;
+      transition: .2s;
+      line-height: 0px;
+      display: none;
+  }
+  
+  .btn-floating:hover span {
+      display: inline-block;
+  }
+  
+  /* Phone */
+  .btn-floating.phone {
+      bottom: 160px;
+      background-color: #760f10;
+  }
+  
+  .btn-floating.phone:hover {
+      background-color: #c03421;
+  }
+  
+  /* WhatsApp */
+  .btn-floating.whatsapp {
+      background-color: #34af23;
+      bottom: 75px;
+  }
+  
+  .btn-floating.whatsapp:hover {
+      background-color: #1f7a12
+  }

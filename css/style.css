@@ -4296,6 +4296,7 @@ h1,
     font-size: 52px;
     letter-spacing: -2px;
     margin-bottom: 20px;
+    margin-top: 100px;
     line-height: 52px;
     font-weight: 500;
 }
@@ -12760,7 +12761,7 @@ body.dark-scheme::-webkit-scrollbar-track,#de_modal::-webkit-scrollbar-track {
     /* These two lines are counted as one :-)       */
 
     display: flex;
-    align-items: center;
+    padding-top: 80px;
 }
 
 #purchase-now {
